@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Devanshu's Proposal</title>
+    <meta
+      name="description"
+      content="Flip the Track Expo iOS and Android app proposal: product demo, technical walkthrough, shipped mobile work, roadmap, and contact details."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="showcase.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand-lockup" href="#top" aria-label="Flip the Track home">
+        <img src="assets/brand-logo.png" alt="Flip the Track logo" />
+        <span>Flip the Track</span>
+      </a>
+      <nav class="header-nav" aria-label="Page sections">
+        <a href="#demo-stage">Demo</a>
+        <a href="#proposal-questions">Questions</a>
+        <a href="#portfolio">Work</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-logo-wrap" aria-hidden="true">
+          <img src="assets/brand-logo.png" alt="" />
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Flip the Track - iOS &amp; Android App Proposal</p>
+          <h1 id="hero-title">Flip the Track</h1>
+          <p class="hero-subtitle">
+            Turning Flip the Track mobile application idea into a polished iOS and Android app with live multiplayer, secure AI judging,
+            native camera capture, and store-launch readiness.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#demo-stage">
+              <span aria-hidden="true">&gt;</span>
+              View demo stage
+            </a>
+            <a class="button button-secondary" href="#proposal-questions">
+              <span aria-hidden="true">+</span>
+              Review answers
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section demo-section" id="demo-stage" aria-labelledby="demo-title">
+        <div class="demo-player">
+          <div class="section-heading">
+            <p class="eyebrow">Demo theater</p>
+            <p>
+              Please check the following recordings. The video on the left side is the real mobile application I created as a small POC to showcase you the demo.
+            </p>
+          </div>
+
+          <div class="media-grid" data-paired-videos>
+            <article class="media-panel">
+              <video
+                data-paired-video="left"
+                muted
+                playsinline
+                preload="metadata"
+                aria-label="Product demo"
+              >
+                <source src="assets/showcase/product-demo.mp4" type="video/mp4" />
+              </video>
+            </article>
+
+            <article class="media-panel">
+              <video
+                data-paired-video="right"
+                playsinline
+                preload="metadata"
+                aria-label="Technical walkthrough"
+              >
+                <source src="assets/showcase/technical-walkthrough.mp4" type="video/mp4" />
+              </video>
+            </article>
+          </div>
+          <button class="button button-primary media-sync-button" type="button" data-video-toggle>
+            <span aria-hidden="true">&gt;</span>
+            Play recordings
+          </button>
+          <input
+            class="media-progress"
+            data-video-progress
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            step="0.1"
+            aria-label="Recording progress"
+          />
+        </div>
+      </section>
+
+      <section class="section questions-section" id="proposal-questions" aria-labelledby="questions-title">
+        <div class="section-heading">
+          <p class="eyebrow">Proposal screening questions</p>
+          <h2 id="questions-title">Direct answers</h2>
+          <p>
+            Concise proof for the proposal questions:
+          </p>
+        </div>
+
+        <div class="question-list">
+          <article class="question-card">
+            <span class="question-number">01</span>
+            <div class="question-content">
+              <h3>Show me a React Native app you have shipped on the App Store or Google Play</h3>
+              <div class="proof-links" aria-label="Shipped app links">
+                <a href="https://play.google.com/store/apps/details?id=com.qewd" target="_blank" rel="noreferrer">
+                  <strong>QEWD</strong>
+                </a>
+                <a href="https://apps.apple.com/us/app/lyra-music-radio-esound/id6747066887" target="_blank" rel="noreferrer">
+                  <strong>Lyra</strong>
+                </a>
+                <a href="https://apps.apple.com/us/app/potato-waves-focus-timer/id6757202644" target="_blank" rel="noreferrer">
+                  <strong>Pomodoro Study Timer</strong>
+                </a>
+                <a href="https://apps.apple.com/us/app/love-letter-bff/id6756315002" target="_blank" rel="noreferrer">
+                  <strong>Love Letter</strong>
+                </a>
+                <a href="https://apps.apple.com/us/app/cleanmind-voice-diary/id6758046617" target="_blank" rel="noreferrer">
+                  <strong>Clean Mind</strong>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="question-card">
+            <span class="question-number">02</span>
+            <div class="question-content">
+              <h3>Describe your recent experience with similar projects</h3>
+              <p class="line-highlight"><strong>I think the most important thing for this kind of gaming mobile app is maintaining reliable frames per second, basically FPS. iOS suggests 60 FPS as the target screen FPS to give end users a fluid feel. On QEWD, I worked in detail on keeping interactions close to 60 FPS while reducing memory leaks, so the app stayed smooth during real-world use.</strong></p>
+              <ul>
+                <li>Most of my recent mobile work has been around React Native, TypeScript, and Expo, building apps that are easy for users to understand but still scalable under the hood.</li>
+                <li>In my last project, I worked deeply with Vision Camera, MediaPipe, and Apple’s Vision framework for camera-based attention signals like blink detection, liveness checks, face angle, gaze cues, and frame-rate-aware capture.</li>
+                <li>On the backend side, I’m comfortable with Node.js, Fastify, Express, Supabase, relational databases, and NoSQL databases, so I can think through the full product flow from app screen to server response.</li>
+                <li>AI has also been a big part of my recent projects. I’ve integrated OpenAI, Gemini, Anthropic Claude, and DeepSeek into real product flows, not just experimental demos.</li>
+                <li>The part I care about a lot is how the app feels in hand. Smooth transitions, subtle animations, and responsive interactions make a product feel more considered and enjoyable to use.</li>
+                <li>I’m also used to the release side of mobile work, including CI/CD pipelines with GitHub Actions and Azure DevOps, test builds, and preparing apps for a cleaner release cycle.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="question-card">
+            <span class="question-number">03</span>
+            <div class="question-content">
+              <h3>Include a link to your GitHub profile and/or website</h3>
+              <div class="proof-links contact-links" aria-label="Profile and contact links">
+                <a href="#top">
+                  <strong>Website</strong>
+                  <span>Flip the Track showcase</span>
+                </a>
+                <a href="https://github.com/devanshujain95">
+                  <strong>Github</strong>
+                  <span>https://github.com/devanshujain95</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="question-card">
+            <span class="question-number">04</span>
+            <div class="question-content">
+              <h3>Describe your approach to testing and improving QA</h3>
+              <p><strong>I approach QA as something that starts during the build, not only at the end. For this kind of app, I would test the game flow, permissions, camera/audio capture, backend behavior, and production observability before widening access.</strong></p>
+              <ul>
+                <li>I’d write unit test cases with Jest for scoring helpers, room state transitions, countdown logic, API payload validation, and edge cases around reconnects or missing media.</li>
+                <li>I’d test permissions deliberately on iOS and Android, including first install, denied camera or microphone access, permission recovery, and the exact copy shown when access is needed.</li>
+                <li>I’d run integration checks for the highest-risk mobile flows: room join, Declare War countdown, camera capture, audio playback, upload retry, AI score request, and result reveal.</li>
+                <li>On the backend, I’d use the Firebase Functions logger with Google Cloud Logging for structured request IDs, AI scoring failures, upload errors, retries, and latency signals.</li>
+                <li>For crash visibility, I’d wire Firebase Crashlytics into release builds, track non-fatal errors around camera, upload, and AI verdict flows, and review crash-free sessions before widening test groups.</li>
+                <li>I’d use Firebase Performance Monitoring where it helps for startup, network latency, and screen traces, especially around capture, upload, and score reveal moments.</li>
+                <li>I’d run TestFlight, Google Play internal testing, and Firebase App Distribution builds with a repeatable smoke checklist before store submission.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected shipped work</p>
+          <h2 id="portfolio-title">Shipped mobile work</h2>
+          <p>
+            A few public links from recent mobile and product work, alongside the custom Flip the Track demo above.
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+          <a href="https://play.google.com/store/apps/details?id=com.qewd" class="portfolio-link" target="_blank" rel="noreferrer">
+            <strong>QEWD</strong>
+            <span>Google Play - US region</span>
+          </a>
+          <a href="https://www.qewd.com/" class="portfolio-link" target="_blank" rel="noreferrer">
+            <strong>QEWD Web</strong>
+            <span>Product website</span>
+          </a>
+          <a href="https://apps.apple.com/us/app/lyra-music-radio-esound/id6747066887" class="portfolio-link" target="_blank" rel="noreferrer">
+            <strong>Lyra</strong>
+            <span>iOS music app</span>
+          </a>
+          <a href="https://apps.apple.com/us/app/potato-waves-focus-timer/id6757202644" class="portfolio-link" target="_blank" rel="noreferrer">
+            <strong>Pomodoro Study Timer</strong>
+            <span>iOS productivity app</span>
+          </a>
+          <a href="https://apps.apple.com/us/app/love-letter-bff/id6756315002" class="portfolio-link" target="_blank" rel="noreferrer">
+            <strong>Love Letter</strong>
+            <span>iOS social app</span>
+          </a>
+          <a href="https://apps.apple.com/us/app/cleanmind-voice-diary/id6758046617" class="portfolio-link" target="_blank" rel="noreferrer">
+            <strong>Clean Mind</strong>
+            <span>iOS voice diary app</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section match-section" aria-labelledby="match-title">
+        <div class="section-heading">
+          <h2 id="match-title">How my experience maps to this app</h2>
+          <p>
+            A clearer map of the main project needs, the relevant proof, and the technical path I would use for Flip the Track.
+          </p>
+        </div>
+
+        <div class="scope-match-list" aria-label="Build scope mapping">
+          <article class="scope-match-card">
+            <span class="scope-match-number">01</span>
+            <div>
+              <h3>Shipped React Native, Expo, and native-module mobile work</h3>
+              <p>I’ve shipped multiple applications on Google Play and the Apple App Store. From building apps in Expo and React Native to implementing native modules like Vision Camera, I have detailed, hands-on experience managing this kind of cross-platform mobile application from product flow to store-ready release.</p>
+            </div>
+          </article>
+          <article class="scope-match-card">
+            <span class="scope-match-number">02</span>
+            <div>
+              <h3>Realtime room sync for two players</h3>
+              <p>Firebase Realtime Database should be the shared source of truth for each room: players, phase, server timestamp, countdown deadline, uploads, and result state. Clients subscribe to that state, while transactions and Cloud Functions for Firebase handle sensitive transitions so both devices converge to the same phase after reconnects, slow networks, or duplicate taps.</p>
+            </div>
+          </article>
+          <article class="scope-match-card">
+            <span class="scope-match-number">03</span>
+            <div>
+              <h3>Fair Declare War countdown</h3>
+              <p>The countdown should not depend on each phone’s local timer. The backend writes a start time, deadline, and room phase version; each app displays the remaining time from the server-backed timestamp and ignores stale state changes.</p>
+            </div>
+          </article>
+          <article class="scope-match-card">
+            <span class="scope-match-number">04</span>
+            <div>
+              <h3>Secure AI scoring and commentary</h3>
+              <p>AI calls should stay server-side, with API keys never exposed to the app. The backend validates uploads, sends controlled scoring inputs to the model, handles retries, logs failures, and writes a normalized verdict back to the room state.</p>
+            </div>
+          </article>
+          <article class="scope-match-card">
+            <span class="scope-match-number">05</span>
+            <div>
+              <h3>Camera, upload, and interaction polish</h3>
+              <p>Vision Camera covers recording and permission states, upload retries protect against unreliable networks, and Reanimated plus Lottie can make the battle flow feel responsive without blocking the main interaction path.</p>
+            </div>
+          </article>
+          <article class="scope-match-card">
+            <span class="scope-match-number">06</span>
+            <div>
+              <h3>Product layer and release readiness</h3>
+              <p>Profiles, match history, leaderboard aggregation, CI/CD, TestFlight, Google Play internal testing, app store assets, and release candidate checks should be treated as part of the product build, not an afterthought.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section roadmap-section" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="section-heading">
+          <p class="eyebrow">Milestone plan</p>
+          <h2>
+            I’m estimating this as a maximum 8-week build to take the full product from scratch through App Store and Google Play release.
+          </h2>
+        </div>
+
+        <ol class="timeline-list">
+          <li>
+            <strong>Foundation, auth, navigation, and battle-room base</strong>
+            <span>Set up the Expo SDK 56 project structure, React Navigation auth/app stacks, permissions layer, Zustand state, MMKV persistence, light/dark theming, icons, SVGs, fonts, and app styling. Integrate Firebase Auth, Firebase Realtime Database, Cloud Functions for Firebase, and the realtime battle-room state models. 
+              Add unit test cases for navigation, auth guard, room state transitions.</span>
+          </li>
+          <li>
+            <strong>Camera intelligence, liveness, audio, and upload pipeline</strong>
+            <span>Implement Vision Camera capture with Apple Vision and MediaPipe signals for liveness: eye blink detection, subtle face movement, face capture quality, gaze cues, face angle, and facing direction. Add audio playback, lip-sync timing, lyrics sync, media permissions, and the upload pipeline. Add unit test cases for permission-state coverage, upload retry tests, and integration checks for capture-to-upload flow.</span>
+          </li>
+          <li>
+            <strong>AI verdict system</strong>
+            <span>Build Gemini video scoring, Claude commentary, Cloud Functions security, retry handling, structured logs, normalized verdict storage, and score reveal UX. Add backend unit test cases for scoring payload validation, retry/failure-path tests, Cloud Logging review, and frontend integration checks for pending, success, and error reveal states.</span>
+          </li>
+          <li>
+            <strong>Competition layer and product polish</strong>
+            <span>Add match history, leaderboard aggregation, user profiles, moderation basics, analytics events, empty/error states, and final interaction polish.</span>
+          </li>
+          <li>
+            <strong>Store submission and release hardening</strong>
+            <span>Prepare app icons, screenshots, privacy details, Firebase Crashlytics, release builds, TestFlight, Google Play internal testing, App Store submission, and Google Play submission. Tests: release-candidate smoke tests, permission copy review, crash-free session review, backend log review, store metadata checklist, and final iOS/Android device QA.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Connect with me</h2>
+          <p>
+            I'd love to discuss scope, milestones, NDA terms, source-code handoff, and the next production build steps. Please let me know right time to connect!
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <a href="mailto:devanshujain95@gmail.com">
+            <strong>Email</strong>
+            <span>devanshujain95@gmail.com</span>
+          </a>
+          <a href="https://x.com/devanshujain_" target="_blank" rel="noreferrer">
+            <strong>X</strong>
+            <span>x.com/devanshujain_</span>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/brand-logo.png" alt="Flip the Track logo" />
+      <div>
+        <strong>Flip the Track iOS &amp; Android app proposal</strong>
+        <span>Product demo, technical walkthrough, shipped app links, roadmap, and contact details.</span>
+      </div>
+    </footer>
+
+    <script src="showcase.js"></script>
+  </body>
+</html>
